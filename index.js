@@ -5,7 +5,11 @@ var decoder = require('./src/tokenDecoder');
 var TYPE_REFRESH_TOKEN = 'REFRESH'
 
 function verifier(token){
-  token = token ? token.replace('Bearer ', '') : null
+  token = token ? token.replace('Bearer ', '') : 
+
+  if(!token){
+    return false;
+  }
   
   var decoded = decoder(token);
   
