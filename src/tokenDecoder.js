@@ -19,9 +19,15 @@ function decoder (assertion) {
         decoded[0] = false;
     }
 
-    decoded[1] = parseInt(parseInt(decoded[1], 16) / 1000, 10);
+    try {
+        decoded[1] = JSON.parse(serialize(decoded[1]));
+        decoded[0] = Object.assign({}, decoded[0], decoded[1]);
+    } catch (e) {
+        
+        decoded[1] = parseInt(parseInt(decoded[1], 16) / 1000, 10);
+    }
 
-    if ((!decoded[0] && !decoded[1]) || isNaN(decoded[1])) {
+    if (!decoded[0] && !decoded[1]) {
         return false;
     }
 

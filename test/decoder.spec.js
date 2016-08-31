@@ -21,7 +21,8 @@ describe('Token decoder', function() {
   it('Returns true for valid tokens', function() {
     var validTokens = [
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ',
-      'eyJ0eXBlIjoiVE9LRU4iLCJjbGllbnRJZCI6IjU0MzgyMzA3Iiwic3RhdGUiOiIxNDcyNjM2Mjk5MDAwIiwiZG9tYWluSWQiOiJib29xczpudWJpY286ZXMiLCJkZXZpY2VJZCI6IldlYi1iODc5ZDAyZS02NzlmLTQ2MGItODNjYi1lMGVkNDQzYjdlNWEiLCJ1c2VySWQiOiJib29xczpudWJpY286ZXM6ZGVtb3Rlc3QxNzpleHRlcm5hbDpicS5jb20iLCJncm91cHMiOltdfQ.53cb1bb3d7f24.B9Hom1dSVx6lXztSc6AQSXz5yho'
+      'eyJ0eXBlIjoiVE9LRU4iLCJjbGllbnRJZCI6IjU0MzgyMzA3Iiwic3RhdGUiOiIxNDcyNjM2Mjk5MDAwIiwiZG9tYWluSWQiOiJib29xczpudWJpY286ZXMiLCJkZXZpY2VJZCI6IldlYi1iODc5ZDAyZS02NzlmLTQ2MGItODNjYi1lMGVkNDQzYjdlNWEiLCJ1c2VySWQiOiJib29xczpudWJpY286ZXM6ZGVtb3Rlc3QxNzpleHRlcm5hbDpicS5jb20iLCJncm91cHMiOltdfQ.53cb1bb3d7f24.B9Hom1dSVx6lXztSc6AQSXz5yho',
+      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxIiwiYXVkIjoiMiIsImV4cCI6MTQ3MjY0NTA4MCwic2NvcGUiOiIzIiwiZG9tYWluSWQiOiJ0ZXN0In0.BEmsXpnCbAsjxCr2fJomdouSEJPgSN5dCE8f56jNx1Q'
     ]
    
     validTokens.forEach(function(token) {
