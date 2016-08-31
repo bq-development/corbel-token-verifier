@@ -31,8 +31,12 @@ TokenObject.prototype.getExpire = function(){
   return this.decoded.expire;
 }
 
-TokenObject.prototype.isExpired = function(){
-  return this.getInfo().state < Date.now()
+TokenObject.prototype.getExpireTime = function(){
+  return this.getInfo().state
+}
+
+TokenObject.prototype.hasExpired = function(){
+  return this.getExpireTime() < Date.now()
 }
 
 TokenObject.prototype.isUser = function(){
