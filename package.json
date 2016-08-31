@@ -1,0 +1,15 @@
+{
+  "name": "corbel-token-verifier",
+  "version": "0.0.1",
+  "description": "A corbel token verifier for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec test/**/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
